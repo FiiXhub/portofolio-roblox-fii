@@ -14,24 +14,30 @@ body{
   z-index:-1;
 }
 
-.container{
+/* LAYOUT */
+.app{
   display:flex;
-  padding:40px;
+  padding:30px;
+  gap:20px;
 }
 
-/* LEFT PANEL */
-.left{
-  width:45%;
+/* RESPONSIVE */
+@media(max-width:900px){
+  .app{
+    flex-direction:column;
+  }
 }
 
-/* PROFILE */
+/* LEFT */
+.left{flex:1;}
+
 .profile{
   display:flex;
   gap:15px;
 }
 
 .profile img{
-  width:90px;
+  width:80px;
   border-radius:50%;
   box-shadow:0 0 20px cyan;
 }
@@ -39,76 +45,55 @@ body{
 /* STATS */
 .stats{
   display:flex;
-  gap:15px;
+  gap:10px;
   margin:20px 0;
 }
 
 .stats div{
   flex:1;
-  background:rgba(0,255,255,0.1);
   padding:15px;
-  border-radius:15px;
+  background:rgba(0,255,255,0.1);
+  border-radius:10px;
   text-align:center;
-  box-shadow:0 0 10px cyan inset;
-}
-
-/* TITLE */
-.title{
-  font-size:28px;
-  margin:20px 0;
 }
 
 /* ICON */
 .icons a{
   display:inline-block;
-  margin:10px;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  background:#000;
+  width:55px;
+  height:55px;
+  margin:5px;
   padding:10px;
+  border-radius:50%;
+  background:black;
   box-shadow:0 0 20px cyan;
 }
 
-.icons img{
-  width:100%;
-}
-
-/* USERNAME */
-.username{
-  margin:20px 0;
-  padding:10px;
-  border:1px solid cyan;
-  border-radius:10px;
-}
+.icons img{width:100%;}
 
 /* BUTTON */
 .btn{
   display:block;
-  padding:15px;
+  padding:12px;
   margin:10px 0;
   text-align:center;
-  background:transparent;
   border:2px solid cyan;
+  border-radius:12px;
   color:cyan;
-  border-radius:15px;
   text-decoration:none;
-  transition:0.3s;
 }
 
 .btn:hover{
   background:cyan;
   color:black;
-  box-shadow:0 0 30px cyan;
 }
 
-/* RIGHT PANEL */
+/* RIGHT */
 .right{
-  width:55%;
+  flex:1;
   text-align:center;
 }
 
-/* AVATAR BOX */
 .avatar-box{
   border:2px solid cyan;
   border-radius:20px;
@@ -117,17 +102,15 @@ body{
 }
 
 /* AVATAR */
-#avatar{
-  width:350px;
-  height:450px;
-  margin:auto;
+#avatar3d{
+  width:100%;
+  height:400px;
 }
 
 /* BIO */
 .bio{
-  margin:40px;
+  margin:20px;
   padding:20px;
   border:2px solid cyan;
-  border-radius:20px;
-  box-shadow:0 0 20px cyan;
+  border-radius:15px;
 }
