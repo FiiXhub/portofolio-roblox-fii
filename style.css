@@ -1,0 +1,133 @@
+body{
+  margin:0;
+  font-family:Poppins;
+  color:#00f7ff;
+  background:black;
+}
+
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:url('https://i.ibb.co.com/9HQCvdjn/1775328895589.png') center/cover;
+  filter:brightness(0.4);
+  z-index:-1;
+}
+
+.container{
+  display:flex;
+  padding:40px;
+}
+
+/* LEFT PANEL */
+.left{
+  width:45%;
+}
+
+/* PROFILE */
+.profile{
+  display:flex;
+  gap:15px;
+}
+
+.profile img{
+  width:90px;
+  border-radius:50%;
+  box-shadow:0 0 20px cyan;
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  gap:15px;
+  margin:20px 0;
+}
+
+.stats div{
+  flex:1;
+  background:rgba(0,255,255,0.1);
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 0 10px cyan inset;
+}
+
+/* TITLE */
+.title{
+  font-size:28px;
+  margin:20px 0;
+}
+
+/* ICON */
+.icons a{
+  display:inline-block;
+  margin:10px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#000;
+  padding:10px;
+  box-shadow:0 0 20px cyan;
+}
+
+.icons img{
+  width:100%;
+}
+
+/* USERNAME */
+.username{
+  margin:20px 0;
+  padding:10px;
+  border:1px solid cyan;
+  border-radius:10px;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  padding:15px;
+  margin:10px 0;
+  text-align:center;
+  background:transparent;
+  border:2px solid cyan;
+  color:cyan;
+  border-radius:15px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:cyan;
+  color:black;
+  box-shadow:0 0 30px cyan;
+}
+
+/* RIGHT PANEL */
+.right{
+  width:55%;
+  text-align:center;
+}
+
+/* AVATAR BOX */
+.avatar-box{
+  border:2px solid cyan;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 0 40px cyan;
+}
+
+/* AVATAR */
+#avatar{
+  width:350px;
+  height:450px;
+  margin:auto;
+}
+
+/* BIO */
+.bio{
+  margin:40px;
+  padding:20px;
+  border:2px solid cyan;
+  border-radius:20px;
+  box-shadow:0 0 20px cyan;
+}
